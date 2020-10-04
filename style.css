@@ -124,3 +124,7 @@ body {
 li {
   margin-bottom: 2.8em;
 }
+
+p {
+  text-align: justify;
+}
