@@ -77,7 +77,9 @@ $('.button').click(function () {
       $('body').addClass('modal-active');
       $('#objasnjenje-clana').empty();
       $('#objasnjenje-clana').append(
-        $('<p>Objasnjenje iz knjige!</p>').fadeIn('slow')
+        $(
+          '<div>ZMPP reguliše:<ul class="list-style"><li>Direktnu međunarodnu nadležnost</li><li>Momenat ocene postojanja direktne međunarodne nadležnosti suda RS</li><li>Zabranu dvostruke međunarodne litispendencije</li><li>Aktorsku kauciju</li><li>Siromaško pravo</li><li>Priznanje i izvršenje stranih sudskih odluka</li><li>Postupak za priznanje stranih sudskih odluka</li><li>Nadležnost suda RS u starateljskim stvarima i uslove za priznanje stranih sudskih odluka u starateljskim stvarima</li><li>Određenje merodavnog prava za stranačku i parničnu sposobnost</li></ul></div>'
+        ).fadeIn('slow')
       );
       break;
     case 'clan2':

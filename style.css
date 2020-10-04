@@ -705,3 +705,8 @@ body.modal-active {
     transform: scale(0);
   }
 }
+
+.list-style li {
+  text-align: left;
+  margin-bottom: 0.2em !important;
+}
