@@ -78,7 +78,7 @@ $('.button').click(function () {
       $('#objasnjenje-clana').empty();
       $('#objasnjenje-clana').append(
         $(
-          '<div>ZMPP reguliše:<ul class="list-style"><li>Direktnu međunarodnu nadležnost</li><li>Momenat ocene postojanja direktne međunarodne nadležnosti suda RS</li><li>Zabranu dvostruke međunarodne litispendencije</li><li>Aktorsku kauciju</li><li>Siromaško pravo</li><li>Priznanje i izvršenje stranih sudskih odluka</li><li>Postupak za priznanje stranih sudskih odluka</li><li>Nadležnost suda RS u starateljskim stvarima i uslove za priznanje stranih sudskih odluka u starateljskim stvarima</li><li>Određenje merodavnog prava za stranačku i parničnu sposobnost</li></ul></div>'
+          '<div><p style="color:green;font-weight: bold;">ZMPP reguliše:</p><ul class="list-style"><li>Direktnu međunarodnu nadležnost</li><li>Momenat ocene postojanja direktne međunarodne nadležnosti suda RS</li><li>Zabranu dvostruke međunarodne litispendencije</li><li>Aktorsku kauciju</li><li>Siromaško pravo</li><li>Priznanje i izvršenje stranih sudskih odluka</li><li>Postupak za priznanje stranih sudskih odluka</li><li>Nadležnost suda RS u starateljskim stvarima i uslove za priznanje stranih sudskih odluka u starateljskim stvarima</li><li>Određenje merodavnog prava za stranačku i parničnu sposobnost</li><li>Imovinska potraživanja iz ugovora o radu</li><li>Ranvoa</li><li>Fraus legis</li><li>Intertemporalni sukob zakona</li><li>Nejedinstveni pravni poredak</li><li>Jednostrani pravni posao</li><li>Nadležnost organa starateljstva</li><li>Kvalifikaciju</li></ul></div>'
         ).fadeIn('slow')
       );
       break;
@@ -87,16 +87,11 @@ $('.button').click(function () {
       $('body').addClass('modal-active');
       $('#objasnjenje-clana').empty();
       $('#objasnjenje-clana').append(
-        $('<p>Prezentacije Stefan Jovanovic</p>').fadeIn('slow')
+        $(
+          '<div><p style="color:red;font-weight: bold;">ZMPP reguliše:</p><ul class="list-style"><li>Obaveze iz menice</li><li>Laku telesnu povredu</li><li>Imunitet</li><li>Prethodno pitanje</li><li>Norme neposredne primene</li><li>Međunarodnu pravnu pomoć</li><li>Dostavljanje</li><li>Jemstvo</li><li>Prekršaj/kazne</li><li>Sticanje državljanstva i prebivalište</li><li>Krivična dela</li><li>Prava stranaca</li><li>Stvarna prava na brodovima u izgradnji</li></li></ul></div>'
+        ).fadeIn('slow')
       );
       break;
-    default:
-      $('#modal-container').removeAttr('class').addClass(buttonId);
-      $('body').addClass('modal-active');
-      $('#objasnjenje-clana').empty();
-      $('#objasnjenje-clana').append(
-        $('<p>Prezentacije Marka Jovanovica</p>').fadeIn('slow')
-      );
   }
 });
 
