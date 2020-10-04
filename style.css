@@ -1,118 +1,126 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
- * {
-	 box-sizing: border-box;
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+* {
+  box-sizing: border-box;
 }
- body {
-	 font-family: 'Lato';
+body {
+  font-family: 'Lato';
 }
- .heading-primary {
-	 font-size: 2em;
-	 padding: 2em;
-	 text-align: center;
+.heading-primary {
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
 }
 
- .heading-secondary {
-	font-size: 1.5em;
-	text-align: center;
- }
- .accordion dl, .accordion-list {
-	 border: 1px solid #ddd;
+.heading-secondary {
+  font-size: 1.5em;
+  text-align: center;
 }
- .accordion dl:after, .accordion-list:after {
-	 content: "";
-	 display: block;
-	 height: 1em;
-	 width: 100%;
-	 background-color: #2ba659;
+.accordion dl,
+.accordion-list {
+  border: 1px solid #ddd;
 }
- .accordion dd, .accordion__panel {
-	 background-color: #eee;
-	 font-size: 1em;
-	 line-height: 1.5em;
+.accordion dl:after,
+.accordion-list:after {
+  content: '';
+  display: block;
+  height: 1em;
+  width: 100%;
+  background-color: #2ba659;
 }
- .accordion p {
-	 padding: 1em 2em 1em 2em;
+.accordion dd,
+.accordion__panel {
+  background-color: #eee;
+  font-size: 1em;
+  line-height: 1.5em;
 }
- .accordion {
-	 position: relative;
-	 background-color: #eee;
+.accordion p {
+  padding: 1em 2em 1em 2em;
 }
- .container {
-	 max-width: 960px;
-	 margin: 0 auto;
-	 padding: 2em 0 2em 0;
+.accordion {
+  position: relative;
+  background-color: #eee;
 }
- .accordionTitle, .accordion__Heading {
-	 background-color: #38cc70;
-	 text-align: center;
-	 font-weight: 700;
-	 padding: 2em;
-	 display: block;
-	 text-decoration: none;
-	 color: #fff;
-	 transition: background-color 0.5s ease-in-out;
-	 border-bottom: 1px solid #30bb64;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 0 2em 0;
 }
- .accordionTitle:before, .accordion__Heading:before {
-	 content: "+";
-	 font-size: 1.5em;
-	 line-height: 0.5em;
-	 float: left;
-	 transition: transform 0.3s ease-in-out;
+.accordionTitle,
+.accordion__Heading {
+  background-color: #38cc70;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 30px;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #30bb64;
 }
- .accordionTitle:hover, .accordion__Heading:hover {
-	 background-color: #2ba659;
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: '+';
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
 }
- .accordionTitleActive, .accordionTitle.is-expanded {
-	 background-color: #2ba659;
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  background-color: #2ba659;
 }
- .accordionTitleActive:before, .accordionTitle.is-expanded:before {
-	 transform: rotate(-225deg);
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: #2ba659;
 }
- .accordionItem {
-	 height: auto;
-	 overflow: hidden;
-	 transition: max-height 1s;
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  transform: rotate(-225deg);
 }
- @media screen and (min-width: 48em) {
-	 .accordionItem {
-		 transition: max-height 0.5s;
-	}
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  transition: max-height 1s;
 }
- .accordionItem.is-collapsed {
-	 max-height: 0;
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    transition: max-height 0.5s;
+  }
 }
- .no-js .accordionItem.is-collapsed {
-	 max-height: auto;
+.accordionItem.is-collapsed {
+  max-height: 0;
 }
- .animateIn {
-	 animation: accordionIn 0.45s normal ease-in-out both 1;
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
 }
- .animateOut {
-	 animation: accordionOut 0.45s alternate ease-in-out both 1;
+.animateIn {
+  animation: accordionIn 0.45s normal ease-in-out both 1;
 }
- @keyframes accordionIn {
-	 0% {
-		 opacity: 0;
-		 transform: scale(0.9) rotateX(-60deg);
-		 transform-origin: 50% 0;
-	}
-	 100% {
-		 opacity: 1;
-		 transform: scale(1);
-	}
+.animateOut {
+  animation: accordionOut 0.45s alternate ease-in-out both 1;
 }
- @keyframes accordionOut {
-	 0% {
-		 opacity: 1;
-		 transform: scale(1);
-	}
-	 100% {
-		 opacity: 0;
-		 transform: scale(0.9) rotateX(-60deg);
-	}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
- li {
-	 margin-bottom: 2.8em;
- }
-
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+  }
+}
+li {
+  margin-bottom: 2.8em;
+}
