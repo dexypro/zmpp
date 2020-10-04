@@ -34,7 +34,7 @@ body {
   line-height: 1.5em;
 }
 .accordion p {
-  padding: 1em 4em 1em 2em;
+  padding: 0em 4em 1em 0em;
 }
 .accordion {
   position: relative;
@@ -127,4 +127,8 @@ li {
 
 p {
   text-align: justify;
+}
+
+dd {
+  margin-inline-start: 20px !important;
 }
