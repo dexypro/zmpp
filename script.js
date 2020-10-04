@@ -68,8 +68,34 @@
 
 $('.button').click(function () {
   var buttonId = $(this).attr('id');
-  $('#modal-container').removeAttr('class').addClass(buttonId);
-  $('body').addClass('modal-active');
+  var zmppClan = $(this).attr('data-zmpp');
+  console.log(zmppClan);
+
+  switch (zmppClan) {
+    case 'clan1':
+      $('#modal-container').removeAttr('class').addClass(buttonId);
+      $('body').addClass('modal-active');
+      $('#objasnjenje-clana').empty();
+      $('#objasnjenje-clana').append(
+        $('<p>Objasnjenje iz knjige!</p>').fadeIn('slow')
+      );
+      break;
+    case 'clan2':
+      $('#modal-container').removeAttr('class').addClass(buttonId);
+      $('body').addClass('modal-active');
+      $('#objasnjenje-clana').empty();
+      $('#objasnjenje-clana').append(
+        $('<p>Prezentacije Stefan Jovanovic</p>').fadeIn('slow')
+      );
+      break;
+    default:
+      $('#modal-container').removeAttr('class').addClass(buttonId);
+      $('body').addClass('modal-active');
+      $('#objasnjenje-clana').empty();
+      $('#objasnjenje-clana').append(
+        $('<p>Prezentacije Marka Jovanovica</p>').fadeIn('slow')
+      );
+  }
 });
 
 $('#modal-container').click(function () {
