@@ -88,7 +88,7 @@ $('.button').click(function () {
       $('#objasnjenje-clana').empty();
       $('#objasnjenje-clana').append(
         $(
-          '<div><p style="color:red;font-weight: bold;">ZMPP reguliše:</p><ul class="list-style"><li>Obaveze iz menice</li><li>Laku telesnu povredu</li><li>Imunitet</li><li>Prethodno pitanje</li><li>Norme neposredne primene</li><li>Međunarodnu pravnu pomoć</li><li>Dostavljanje</li><li>Jemstvo</li><li>Prekršaj/kazne</li><li>Sticanje državljanstva i prebivalište</li><li>Krivična dela</li><li>Prava stranaca</li><li>Stvarna prava na brodovima u izgradnji</li></li></ul></div>'
+          '<div><p style="color:red;font-weight: bold;">ZMPP reguliše:</p><ul class="list-style"><li>Obaveze iz menice</li><li>Laku telesnu povredu</li><li>Imunitet</li><li>Prethodno pitanje</li><li>Norme neposredne primene</li><li>Međunarodnu pravnu pomoć</li><li>Dostavljanje</li><li>Jemstvo</li><li>Prekršaj/kazne</li><li>Sticanje državljanstva i prebivalište</li><li>Krivična dela</li><li>Prava stranaca</li><li>Stvarna prava na brodovima u izgradnji</li><li>Relativnu isključivu nadležnost</li></ul></div>'
         ).fadeIn('slow')
       );
       break;
@@ -109,6 +109,16 @@ $('.button').click(function () {
       $('#objasnjenje-clana').append(
         $(
           '<div style="text-align: left;">1. Kako se popunjavaju pravne praznine?<ol class="list-style"><li></li><li></li><li></li></ol></div><div style="text-align: left;">2. Pravne praznine u ZMPPu se mogu popunjavati "principom najbliže veze"? <ul class="list-style"><li style="color: green;">TAČNO</li></li></ul></ul></div>'
+        ).fadeIn('slow')
+      );
+      break;
+    case 'clan3':
+      $('#modal-container').removeAttr('class').addClass(buttonId);
+      $('body').addClass('modal-active');
+      $('#objasnjenje-clana').empty();
+      $('#objasnjenje-clana').append(
+        $(
+          '<div style="text-align: left;">Hijerarhija izvora: <ol class="list-style"><li>Ustav</li><li>Potvrđeni (ratifikovani) međunarodni ugovori (bilateralni)</li><li>Potvrđene međunarodne konvencije (multilateralni)</li><li>Domaći zakoni</li><li>ZMPP</li></ol></div>'
         ).fadeIn('slow')
       );
       break;
