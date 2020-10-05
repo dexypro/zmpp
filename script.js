@@ -88,7 +88,7 @@ $('.button').click(function () {
       $('#objasnjenje-clana').empty();
       $('#objasnjenje-clana').append(
         $(
-          '<div><p style="color:red;font-weight: bold;">ZMPP reguliše:</p><ul class="list-style"><li>Obaveze iz menice</li><li>Laku telesnu povredu</li><li>Imunitet</li><li>Prethodno pitanje</li><li>Norme neposredne primene</li><li>Međunarodnu pravnu pomoć</li><li>Dostavljanje</li><li>Jemstvo</li><li>Prekršaj/kazne</li><li>Sticanje državljanstva i prebivalište</li><li>Krivična dela</li><li>Prava stranaca</li><li>Stvarna prava na brodovima u izgradnji</li><li>Relativnu isključivu nadležnost</li></ul></div>'
+          '<div><p style="color:red;font-weight: bold;">ZMPP reguliše:</p><ul class="list-style"><li>Obaveze iz menice</li><li>Laku telesnu povredu</li><li>Imunitet</li><li>Prethodno pitanje</li><li>Norme neposredne primene</li><li>Međunarodnu pravnu pomoć</li><li>Dostavljanje</li><li>Jemstvo</li><li>Prekršaj/kazne</li><li>Sticanje državljanstva i prebivalište</li><li>Krivična dela</li><li>Prava stranaca</li><li>Stvarna prava na brodovima u izgradnji</li><li>Relativnu isključivu nadležnost</li><li>Posledice nesaznatljivosti stranog prava</li><li>Mesna nadležnost srpskog suda koji je međunarodno nadležan</li><li>Sticanje i prestanak državljanstva</li><li>Prava stranaca da nasleđuju u Srbiji</li></ul></div>'
         ).fadeIn('slow')
       );
       break;
