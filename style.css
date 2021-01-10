@@ -782,6 +782,10 @@ body.modal-active {
   margin-bottom: 0.2em !important;
 }
 
-mark {
+.merodavnoPravo mark {
   background-color: #a8f7e0;
+}
+
+.nadleznost mark {
+  background-color: #fff4be;
 }
