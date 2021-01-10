@@ -79,6 +79,40 @@ body {
   transform: rotate(-225deg);
 }
 
+/* CHANGING COLOR OF OPSTI INSTITUTI */
+.accordionOpsti {
+  background-color: #b71540;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 30px;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #9c1237;
+}
+.accordionOpsti:before {
+  content: '+';
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionOpsti:hover {
+  background-color: #6d0d27;
+}
+.accordionOpstiActive,
+.accordionOpsti.is-expanded {
+  background-color: #72102a;
+}
+.accordionOpstiActive:before,
+.accordionOpsti.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+/* ENDING OF OPSTI */
+
 /* CHANGING COLOR OF NADLEZNOST */
 .accordionJurisdiction {
   background-color: #079992;
