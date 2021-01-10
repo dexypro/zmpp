@@ -781,3 +781,7 @@ body.modal-active {
   text-align: left;
   margin-bottom: 0.2em !important;
 }
+
+mark {
+  background-color: #a8f7e0;
+}
