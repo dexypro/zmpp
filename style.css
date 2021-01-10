@@ -29,7 +29,7 @@ body {
 }
 .accordion dd,
 .accordion__panel {
-  /* background-color: #eee; */
+  background-color: #fff;
   font-size: 1em;
   line-height: 1.5em;
 }
