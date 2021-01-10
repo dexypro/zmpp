@@ -24,8 +24,8 @@ body {
   content: '';
   display: block;
   height: 1em;
-  width: 100%;
-  background-color: #2ba659;
+  width: 97%;
+  background-color: #fff;
 }
 .accordion dd,
 .accordion__panel {
@@ -78,6 +78,41 @@ body {
 .accordionTitle.is-expanded:before {
   transform: rotate(-225deg);
 }
+
+/* CHANGING COLOR OF NADLEZNOST */
+.accordionJurisdiction {
+  background-color: #079992;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 30px;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #088680;
+}
+.accordionJurisdiction:before {
+  content: '+';
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionJurisdiction:hover {
+  background-color: #07726d;
+}
+.accordionJurisdictionActive,
+.accordionJurisdiction.is-expanded {
+  background-color: #046661;
+}
+.accordionJurisdictionActive:before,
+.accordionJurisdiction.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+/* ENDING OF JURISDICTION */
+
 .accordionItem {
   height: auto;
   overflow: hidden;
