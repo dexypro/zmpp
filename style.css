@@ -6,7 +6,7 @@ body {
   font-family: 'Lato';
 }
 .heading-primary {
-  font-size: 1.6em;
+  font-size: 1rem;
   padding: 0.1em;
   text-align: center;
   margin-right: 20px;
@@ -860,7 +860,7 @@ a {
   background: #66b1f1;
   transition: left 0.3s ease;
 }
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .et-hero-tabs h1,
   .et-slide h1 {
     font-size: 3rem;
@@ -872,7 +872,7 @@ a {
   .et-hero-tab {
     font-size: 1rem;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
