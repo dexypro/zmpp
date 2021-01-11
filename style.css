@@ -814,7 +814,7 @@ a {
 .et-slide h1 {
   font-size: 2rem;
   margin: 0;
-  letter-spacing: 1rem;
+  /* letter-spacing: 1rem; */
 }
 .et-hero-tabs h3,
 .et-slide h3 {
