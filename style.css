@@ -300,3 +300,7 @@ a {
     font-size: 0.6rem;
   }
 }
+
+.merodavnoPravo mark {
+  background-color: #a0faf5;
+}
