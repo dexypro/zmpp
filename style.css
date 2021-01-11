@@ -845,7 +845,7 @@ a {
   color: #000;
   /* letter-spacing: 0.1rem; */
   transition: all 0.5s ease;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .et-hero-tab:hover {
   color: white;
@@ -867,9 +867,25 @@ a {
   }
   .et-hero-tabs h3,
   .et-slide h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .et-hero-tab {
-    font-size: 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .et-hero-tabs h1,
+  .et-slide h1 {
+    font-size: 2rem;
+    letter-spacing: normal;
+  }
+  .et-hero-tabs h3,
+  .et-slide h3 {
+    font-size: 0.8rem;
+  }
+  .et-hero-tab {
+    font-size: 0.6rem;
   }
 }
