@@ -149,6 +149,108 @@ body {
 
 /* ENDING OF JURISDICTION */
 
+/* CHANGING COLOR OF OSTALE ODREDBE */
+.accordionOstalo {
+  background-color: #919496;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 30px;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #707577;
+}
+.accordionOstalo:before {
+  content: '+';
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionOstalo:hover {
+  background-color: #555a5c;
+}
+.accordionOstaloActive,
+.accordionOstalo.is-expanded {
+  background-color: #4d4f50;
+}
+.accordionOstaloActive:before,
+.accordionOstalo.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+/* ENDING OF OSTALE ODREDBE */
+
+/* CHANGING COLOR OF Priznanje stranih odluka */
+.accordionOdluke {
+  background-color: #e17055;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 30px;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #c74e30;
+}
+.accordionOdluke:before {
+  content: '+';
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionOdluke:hover {
+  background-color: #b63a1b;
+}
+.accordionOdlukeActive,
+.accordionOdluke.is-expanded {
+  background-color: #aa3c20;
+}
+.accordionOdlukeActive:before,
+.accordionOdluke.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+/* ENDING OF Priznanje stranih odluka */
+
+/* CHANGING COLOR OF POSEBNE ODREDBE */
+.accordionPosebne {
+  background-color: #786fa6;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 30px;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #675ba1;
+}
+.accordionPosebne:before {
+  content: '+';
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionPosebne:hover {
+  background-color: #4b3c96;
+}
+.accordionPosebneActive,
+.accordionPosebne.is-expanded {
+  background-color: #4d3c9e;
+}
+.accordionPosebneActive:before,
+.accordionPosebne.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+/* ENDING OF POSEBNE ODREDBE */
+
 .accordionItem {
   height: auto;
   overflow: hidden;
