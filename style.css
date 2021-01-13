@@ -466,3 +466,7 @@ p {
   border: 1px solid #4ac959 !important;
   box-shadow: 0px 0px 0px 2px #4ac959 !important;
 }
+
+.et-hero-tabs a:visited {
+  color: #000 !important;
+}
