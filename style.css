@@ -444,11 +444,6 @@ a {
 
 /* FLIP BOOTSRTAP CARDS */
 
-a:hover,
-a:visited {
-  color: rgb(255, 255, 255) !important;
-}
-
 p {
   margin-top: 15px !important;
 }
